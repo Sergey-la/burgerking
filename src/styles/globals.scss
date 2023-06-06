@@ -6,6 +6,11 @@
 
     --main-background: #f5ebdc;
     --main-text-color: #502314;
+    --main-border: #d7c7b5;
+    --hover-link: #87604f;
+    --active: #d60000;
+
+    --duration: 0.4s ease-in-out;
 }
 
 html {
@@ -17,8 +22,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: var(--main-background);
-    font-family: var(--proxima-regular);
+    font-family: var(--proxima-extra-bold);
     color: var(--main-text-color);
+    overflow: hidden;
 }
 
 html,
@@ -65,7 +71,6 @@ ul {
 }
 
 a {
-    display: block;
     cursor: pointer;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -78,6 +83,10 @@ a {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    font-family: var(--proxima-extra-bold);
 }
 
+.container {
+    margin: 0 auto;
+    padding: 0 11px;
+    max-width: 1280px;
+}

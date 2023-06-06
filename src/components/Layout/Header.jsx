@@ -8,7 +8,7 @@ import styles from './Layout.module.scss';
 function Header() {
     return (
         <header>
-            <div className={styles['header-wrapper']}>
+            <div className={`${'container'} ${styles['header-wrapper']}`}>
                 <Link to={MAIN_ROUTE}>
                     <img src={logo} alt="BurgerKing Логотип" />
                 </Link>
