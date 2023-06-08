@@ -1,8 +1,10 @@
 @import 'fonts';
+@import './ui/all';
 
 :root {
     --proxima-regular: 'ProximaNova-Regular', sans-serif;
     --proxima-extra-bold: 'ProximaNova-Extrabld', sans-serif;
+    --proxima-bold: 'ProximaNova-Bold', sans-serif;
 
     --main-background: #f5ebdc;
     --main-text-color: #502314;
@@ -22,9 +24,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: var(--main-background);
-    font-family: var(--proxima-extra-bold);
+    font-family: var(--proxima-regular);
     color: var(--main-text-color);
-    overflow: hidden;
+    min-height: 101%;
 }
 
 html,
@@ -50,20 +52,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--proxima-extra-bold);
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-h1 {
-    font-size: 48px;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 30px;
+    font-family: var(--proxima-bold);
+    font-size: 60px;
+    line-height: 100%;
 }
 
 ul {

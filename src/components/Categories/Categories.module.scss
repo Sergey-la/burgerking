@@ -1,6 +1,10 @@
 .categories {
+    position: sticky;
     border-bottom: 2px solid var(--main-border);
     padding-top: 10px;
+    margin-bottom: 35px;
+    top: 97px;
+    background-color: var(--main-background);
 
     ul {
         display: flex;
@@ -10,6 +14,7 @@
             cursor: pointer;
             font-size: 20px;
             padding-bottom: 8px;
+            font-family: var(--proxima-extra-bold);
             transition: all var(--duration);
             &:last-child {
                 padding-right: 10px;
