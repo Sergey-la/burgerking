@@ -1,0 +1,40 @@
+.not-found-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 530px;
+    padding: 88px 10px 120px;
+    width: 100%;
+
+    svg {
+        margin-bottom: 42px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+        @media screen and (max-width: 350px) {
+          font-size: 27px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    a {
+        border: 1px solid #502314;
+        background-color: #d62300;
+        border-color: #d62300;
+        border-radius: 50px;
+        color: #f5ebdc;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 14px 19px;
+        text-align: center;
+        text-transform: none;
+    }
+}

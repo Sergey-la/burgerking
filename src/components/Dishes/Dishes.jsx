@@ -29,15 +29,14 @@ function Dishes() {
                 dispatch(setLoaded(false));
             });
     }, [categoryId, dispatch, loaded]);
-    console.log(1)
 
     return (
         <div className="container">
             <h2>{titleCategory[categoryId - 1]}</h2>
             {loaded && (
-                <>
+                <React.Fragment>
                     <Loader />
-                </>
+                </React.Fragment>
             )}
             {!loaded && (
                 <React.Fragment>

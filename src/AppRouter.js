@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { publicRoutes } from './routes';
-import { MAIN_ROUTE } from './utils/consts';
+import { NOT_FOUND_ROUTE } from './utils/consts';
 import Layout from './components/Layout/Layout';
 
 function AppRouter() {
@@ -17,7 +17,7 @@ function AppRouter() {
                 />
             ))}
 
-            <Route path="*" element={<Navigate to={MAIN_ROUTE} />} />
+            <Route path="*" element={<Navigate to={NOT_FOUND_ROUTE} />} />
         </Routes>
     );
 }

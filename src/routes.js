@@ -1,6 +1,8 @@
 import MainPage from './pages/MainPage';
 import CartPage from './pages/CartPage';
-import { CART_ROUTE, MAIN_ROUTE } from './utils/consts';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+
+import { CART_ROUTE, MAIN_ROUTE, NOT_FOUND_ROUTE } from './utils/consts';
 
 export const publicRoutes = [
     {
@@ -10,5 +12,9 @@ export const publicRoutes = [
     {
         path: CART_ROUTE,
         Component: CartPage,
+    },
+    {
+        path: NOT_FOUND_ROUTE,
+        Component: NotFoundPage,
     },
 ];

@@ -9,9 +9,8 @@ h2 {
 }
 
 .dishes-wrapper {
-    grid-gap: 60px 32px;
-    border-bottom: 1px solid #d7c7b5;
     display: grid;
+    grid-gap: 60px 32px;
     gap: 60px 32px;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 60px;
